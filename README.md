@@ -18,26 +18,8 @@ docker pull img/ocserv
 Start an ocserv instance:
 
 ```bash
-docker run --name ocserv --privileged -p 443:443 -p 443:443/udp -d tommylau/ocserv
+docker run --name ocserv --privileged -p 443:443 -p 443:443/udp -d img/ocserv
 ```
-
-### Environment Variables
-
-All the variables to this image is optional, which means you don't have to type in any environment variables, and you can have a OpenConnect Server out of the box! However, if you like to config the ocserv the way you like it, here's what you wanna know.
-
-`CA_CN`, this is the common name used to generate the CA(Certificate Authority).
-
-`CA_ORG`, this is the organization name used to generate the CA.
-
-`CA_DAYS`, this is the expiration days used to generate the CA.
-
-`SRV_CN`, this is the common name used to generate the server certification.
-
-`SRV_ORG`, this is the organization name used to generate the server certification.
-
-`SRV_DAYS`, this is the expiration days used to generate the server certification.
-
-`NO_TEST_USER`, while this variable is set to not empty, the `test` user will not be created. You have to create your own user with password. The default value is to create `test` user with password `test`.
 
 ### Running examples
 
