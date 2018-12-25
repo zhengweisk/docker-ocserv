@@ -1,6 +1,6 @@
 FROM alpine:3.7
 
-MAINTAINER Tommy Lau <tommy@gen-new.com>
+MAINTAINER sk  <sklinux@qq.com>
 
 ENV OC_VERSION=0.12.1
 
